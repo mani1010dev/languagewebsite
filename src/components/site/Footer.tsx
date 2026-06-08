@@ -10,9 +10,12 @@ export function Footer() {
       <div className="mx-auto max-w-7xl px-5 md:px-8">
         <div className="grid md:grid-cols-12 gap-10 pb-16 border-b border-white/10">
           <div className="md:col-span-5">
-            <div className="font-display text-4xl md:text-5xl leading-[1.1]">
-              Mozhi Mirai<br/>
-              Lingua <span className="italic text-yellow">Institute.</span>
+            <div className="flex items-center gap-3">
+              <img src="/Untitled design (20).png" alt="MMLI Logo" className="h-14 w-auto object-contain" />
+              <div className="font-display text-3xl md:text-4xl leading-[1.1]">
+                Mozhi Mirai<br/>
+                Lingua <span className="italic text-yellow">Institute.</span>
+              </div>
             </div>
             <p className="mt-6 max-w-sm text-background/70">The Future of Languages. A premier online language institute dedicated to transforming the way people learn languages.</p>
 
