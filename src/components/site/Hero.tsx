@@ -67,7 +67,7 @@ export function Hero() {
           {/* mini stats strip */}
           <div className="mt-14 grid grid-cols-3 max-w-md gap-6">
             {[
-              ["5,000+", "Students"],
+              ["100+", "Students"],
               ["20+", "Trainers"],
               ["95%", "Success"],
             ].map(([n, l]) => (

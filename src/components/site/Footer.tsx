@@ -21,8 +21,6 @@ const COLS = [
     title: "Connect",
     links: [
       { label: "Instagram", href: "https://www.instagram.com/mozhimirai?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==", target: "_blank" },
-      { label: "YouTube", href: "#" },
-      { label: "LinkedIn", href: "#" },
       { label: "WhatsApp", href: "https://wa.me/918754558374", target: "_blank" },
     ],
   },
@@ -33,7 +31,7 @@ export function Footer() {
     <footer className="bg-foreground text-background pt-24 pb-10">
       <div className="mx-auto max-w-7xl px-5 md:px-8">
         <div className="grid md:grid-cols-12 gap-10 pb-16 border-b border-white/10">
-          <div className="md:col-span-5">
+          <div className="md:col-span-4">
             <div className="flex items-center gap-3">
               <img src="/Untitled design (20).png" alt="MMLI Logo" className="h-14 w-auto object-contain" />
               <div className="font-display text-3xl md:text-4xl leading-[1.1]">
@@ -69,7 +67,7 @@ export function Footer() {
             </div>
           ))}
 
-          <div className="md:col-span-1 text-xs text-background/60 leading-relaxed">
+          <div className="md:col-span-2 text-xs text-background/60 leading-relaxed md:text-right">
             Online Only<br/>+91 87545 58374
           </div>
         </div>
