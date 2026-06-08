@@ -1,18 +1,32 @@
 import { motion } from "motion/react";
-import a from "@/assets/about-portrait.jpg";
-import b from "@/assets/lang-english.jpg";
-import c from "@/assets/lang-japanese.jpg";
-import d from "@/assets/lang-german.jpg";
-import e from "@/assets/lang-hindi.jpg";
-import f from "@/assets/lang-tamil.jpg";
 
 const ITEMS = [
-  { src: a, span: "row-span-2", label: "The Atelier" },
-  { src: b, span: "", label: "London Week" },
-  { src: c, span: "", label: "Sakura Workshop" },
-  { src: d, span: "row-span-2", label: "Berlin Exchange" },
-  { src: e, span: "", label: "Hindi Diwas" },
-  { src: f, span: "", label: "Tamil Literature Day" },
+  {
+    src: "/photos/WhatsApp Video 2026-06-08 at 12.22.24 PM.mp4",
+    span: "md:col-span-2 md:row-span-2",
+    label: "Live Virtual Classroom Session",
+    isVideo: true,
+  },
+  {
+    src: "/photos/WhatsApp Image 2026-06-06 at 11.04.28 AM.jpeg",
+    span: "",
+    label: "Interactive Learning Materials",
+  },
+  {
+    src: "/photos/WhatsApp Image 2026-06-08 at 12.22.25 PM.jpeg",
+    span: "",
+    label: "Professional Online Training",
+  },
+  {
+    src: "/photos/WhatsApp Image 2026-06-08 at 12.22.25 PM (1).jpeg",
+    span: "md:row-span-2",
+    label: "Engaged Learners & Batches",
+  },
+  {
+    src: "/photos/WhatsApp Image 2026-06-08 at 12.22.26 PM.jpeg",
+    span: "md:col-span-2",
+    label: "Linguistic & Study Sessions",
+  },
 ];
 
 export function Gallery() {
@@ -26,7 +40,7 @@ export function Gallery() {
               Life inside <span className="italic text-gradient-brand">the institute.</span>
             </h2>
           </div>
-          <p className="max-w-sm text-foreground/70">Workshops, festivals, guest sessions and quiet study afternoons — a year in pictures.</p>
+          <p className="max-w-sm text-foreground/70">Virtual sessions, study groups, interactive lessons, and global certifications — a year in pictures.</p>
         </div>
 
         <div className="grid grid-cols-2 md:grid-cols-4 auto-rows-[200px] md:auto-rows-[240px] gap-4">
@@ -39,7 +53,33 @@ export function Gallery() {
               transition={{ duration: 0.6, delay: i * 0.05 }}
               className={`group relative overflow-hidden rounded-2xl ${it.span}`}
             >
-              <img src={it.src} alt={it.label} loading="lazy" width={1280} height={880} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
+              {it.isVideo ? (
+                <div className="relative w-full h-full">
+                  <video
+                    src={it.src}
+                    muted
+                    loop
+                    playsInline
+                    autoPlay
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                  />
+                  <span className="absolute top-4 right-4 bg-black/60 backdrop-blur text-white text-xs font-semibold px-2 py-1 rounded-md flex items-center gap-1">
+                    <svg className="size-3 fill-current text-white" viewBox="0 0 24 24">
+                      <path d="M8 5v14l11-7z" />
+                    </svg>
+                    REEL PREVIEW
+                  </span>
+                </div>
+              ) : (
+                <img
+                  src={it.src}
+                  alt={it.label}
+                  loading="lazy"
+                  width={1280}
+                  height={880}
+                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                />
+              )}
               <figcaption className="absolute inset-x-0 bottom-0 p-4 text-white text-sm font-medium bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity">
                 {it.label}
               </figcaption>
