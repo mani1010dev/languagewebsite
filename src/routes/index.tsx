@@ -6,9 +6,9 @@ import { About } from "@/components/site/About";
 import { LanguageStories } from "@/components/site/LanguageStories";
 import { Journey } from "@/components/site/Journey";
 import { Stats } from "@/components/site/Stats";
-import { Trainers } from "@/components/site/Trainers";
+
 import { Testimonials } from "@/components/site/Testimonials";
-import { Gallery } from "@/components/site/Gallery";
+
 import { InstagramFeed } from "@/components/site/InstagramFeed";
 import { Blog } from "@/components/site/Blog";
 import { Faq } from "@/components/site/Faq";
@@ -54,9 +54,9 @@ function Index() {
         <LanguageStories />
         <Journey />
         <Stats />
-        <Trainers />
+
         <Testimonials />
-        <Gallery />
+
         <InstagramFeed />
         <Blog />
         <Faq />

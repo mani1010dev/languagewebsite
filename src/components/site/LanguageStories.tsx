@@ -12,7 +12,7 @@ const STORIES = [
     native: "The Global Tongue",
     image: english,
     accent: "text-orange",
-    bullets: ["Levels A1–C2 Programs", "IELTS & TOEFL Preparation", "Spoken English Classes", "Interactive Grammar & Vocabulary"],
+    bullets: ["Levels A1–C2 Programs", "IELTS & TOEFL Preparation", "Spoken English Classes", "Grammar Training"],
     duration: "4 Months + 2 Months Exam Prep",
   },
   {
@@ -21,7 +21,7 @@ const STORIES = [
     native: "हिन्दी",
     image: hindi,
     accent: "text-pink",
-    bullets: ["All Proficiency Levels", "Spoken Hindi Focus", "Conversational Fluency", "Cultural & Media Literacy"],
+    bullets: ["All Proficiency Levels", "Spoken Hindi Focus"],
     duration: "4 Months + 2 Months Exam Prep",
   },
   {
@@ -30,7 +30,7 @@ const STORIES = [
     native: "日本語",
     image: japanese,
     accent: "text-purple",
-    bullets: ["JLPT N5–N1 Preparation", "NAT Q5–Q1 Examination", "Kaiwa (Spoken Japanese)", "Career & Study guidance in Japan"],
+    bullets: ["JLPT N5–N1 Preparation", "NAT Q5–Q1 Examination", "Kaiwa (Spoken Japanese)"],
     duration: "4 Months + 2 Months Exam Prep",
   },
   {
@@ -39,7 +39,7 @@ const STORIES = [
     native: "Deutsch",
     image: german,
     accent: "text-royal",
-    bullets: ["Levels A1–B2 Programs", "Goethe Exam Preparation", "Study in Germany guidance", "Engineering & Work Visa support"],
+    bullets: ["Levels A1–B2 Programs"],
     duration: "4 Months + 2 Months Exam Prep",
   },
   {
@@ -48,7 +48,7 @@ const STORIES = [
     native: "தமிழ்",
     image: tamil,
     accent: "text-lime",
-    bullets: ["All Proficiency Levels", "Reading, Writing & Speaking", "Classical & Modern Tamil", "Heritage Language Learning"],
+    bullets: ["All Proficiency Levels"],
     duration: "4 Months + 2 Months Exam Prep",
   },
 ];
@@ -65,7 +65,7 @@ export function LanguageStories() {
             </h2>
           </div>
           <p className="max-w-md text-foreground/70 text-lg">
-            Each language is a doorway to a culture, a career, and a community. Choose yours and step through.
+            Each course spans 4 months of comprehensive training + 2 months of dedicated exam preparation, combining proficiency with confidence.
           </p>
         </div>
 

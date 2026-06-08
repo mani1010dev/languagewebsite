@@ -1,12 +1,18 @@
 import { motion } from "motion/react";
 
-const REVIEWS = [
-  { name: "Aisha K.", course: "IELTS · English", text: "I scored an 8.0 and landed admits from three UK universities. The mock interviews were a game changer.", color: "bg-yellow" },
-  { name: "Karthik S.", course: "JLPT N3", text: "Hiroshi-sensei made kanji feel like puzzles, not punishments. I'm relocating to Osaka next month.", color: "bg-orange" },
-  { name: "Meera P.", course: "German A2", text: "Warm teachers, structured pace, and a community that actually wants you to speak.", color: "bg-lime" },
-  { name: "Rahul V.", course: "Spoken English", text: "Six months in and my client calls are confident, not rehearsed. Worth every rupee.", color: "bg-pink" },
-  { name: "Sneha R.", course: "Tamil Literature", text: "Priya ma'am brought poetry alive. I'm reading Bharathiyar in the original now.", color: "bg-sky" },
-  { name: "Daniel O.", course: "Hindi Beginner", text: "I came for travel, stayed for the culture. The trainers treat learners like equals.", color: "bg-purple text-white" },
+const SCREENSHOT_TESTIMONIALS = [
+  {
+    src: "/WhatsApp Image 2026-06-08 at 12.18.57 PM.jpeg",
+    name: "Praveen (HITS)",
+    caption: "\"This being ur first class and you have given 100percent already 💪 Soooo proud of you\"",
+    tag: "Student Appreciation",
+  },
+  {
+    src: "/WhatsApp Image 2026-06-08 at 12.18.57 PM (1).jpeg",
+    name: "Heena — Nihongo Learner",
+    caption: "\"Arigato gozaimasu, sensei for today's session. It was really engaging and I will continue practicing my pronunciation\"",
+    tag: "Japanese Session Feedback",
+  },
 ];
 
 export function Testimonials() {
@@ -19,27 +25,60 @@ export function Testimonials() {
         </h2>
       </div>
 
-      <div className="mx-auto max-w-7xl px-5 md:px-8 columns-1 sm:columns-2 lg:columns-3 gap-6 space-y-6">
-        {REVIEWS.map((r, i) => (
-          <motion.figure
-            key={r.name}
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6, delay: (i % 3) * 0.1 }}
-            style={{ transform: `rotate(${(i % 2 === 0 ? -1 : 1) * (1 + (i % 3))}deg)` }}
-            className={`break-inside-avoid p-7 rounded-2xl ${r.color} shadow-xl shadow-foreground/10 hover:rotate-0 transition-transform duration-500`}
-          >
-            <blockquote className="font-display text-xl leading-snug">"{r.text}"</blockquote>
-            <figcaption className="mt-6 flex items-center gap-3">
-              <span className="size-10 rounded-full bg-white/70 grid place-items-center font-display text-sm">{r.name.charAt(0)}</span>
-              <div>
-                <div className="font-medium">{r.name}</div>
-                <div className="text-xs opacity-80 uppercase tracking-widest">{r.course}</div>
+      {/* Real student chat screenshots */}
+      <div className="mx-auto max-w-7xl px-5 md:px-8">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+          className="mb-10 text-center"
+        >
+          <p className="text-xs uppercase tracking-[0.3em] text-muted-foreground">Real Conversations</p>
+          <h3 className="mt-3 font-display text-3xl md:text-4xl leading-tight">
+            What students <span className="italic text-gradient-brand">actually say.</span>
+          </h3>
+        </motion.div>
+
+        <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+          {SCREENSHOT_TESTIMONIALS.map((item, i) => (
+            <motion.div
+              key={item.name}
+              initial={{ opacity: 0, y: 30, rotate: i % 2 === 0 ? -2 : 2 }}
+              whileInView={{ opacity: 1, y: 0, rotate: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.7, delay: i * 0.15 }}
+              className="group relative bg-white rounded-3xl shadow-xl shadow-foreground/5 overflow-hidden border border-foreground/5 hover:shadow-2xl hover:shadow-foreground/10 transition-shadow duration-500"
+            >
+              {/* Tag badge */}
+              <div className="absolute top-4 left-4 z-10">
+                <span className="bg-gradient-to-r from-royal to-teal text-white text-[10px] uppercase tracking-[0.2em] font-semibold px-3 py-1.5 rounded-full shadow-md">
+                  {item.tag}
+                </span>
               </div>
-            </figcaption>
-          </motion.figure>
-        ))}
+
+              {/* Screenshot image */}
+              <div className="relative overflow-hidden">
+                <img
+                  src={item.src}
+                  alt={`Chat with ${item.name}`}
+                  loading="lazy"
+                  className="w-full h-auto object-contain group-hover:scale-[1.02] transition-transform duration-700"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent pointer-events-none" />
+              </div>
+
+              {/* Caption */}
+              <div className="p-5">
+                <p className="text-sm text-foreground/60 italic leading-relaxed line-clamp-2">{item.caption}</p>
+                <div className="mt-3 flex items-center gap-2">
+                  <span className="size-7 rounded-full bg-gradient-to-br from-royal to-teal grid place-items-center text-white text-xs font-bold">{item.name.charAt(0)}</span>
+                  <span className="text-sm font-medium text-foreground/80">{item.name}</span>
+                </div>
+              </div>
+            </motion.div>
+          ))}
+        </div>
       </div>
     </section>
   );

@@ -13,8 +13,6 @@ const COLS = [
     title: "Institute",
     links: [
       { label: "About", href: "#about" },
-      { label: "Trainers", href: "#trainers" },
-      { label: "Gallery", href: "#gallery" },
       { label: "Blog", href: "#blog" },
       { label: "Careers", href: "#contact" },
     ],

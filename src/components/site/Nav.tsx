@@ -6,9 +6,7 @@ const LINKS = [
   ["Home", "#home"],
   ["About", "#about"],
   ["Languages", "#languages"],
-  ["Trainers", "#trainers"],
   ["Testimonials", "#testimonials"],
-  ["Gallery", "#gallery"],
   ["Blog", "#blog"],
   ["Contact", "#contact"],
 ];
