@@ -18,9 +18,9 @@ import { BackToTop } from "@/components/site/BackToTop";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Mozhi Mirai — The Future of Languages" },
-      { name: "description", content: "Master English, Hindi, Japanese, German, and Tamil with expert online trainers at Mozhi Mirai — the premier online language institute." },
-      { property: "og:title", content: "Mozhi Mirai — The Future of Languages" },
+      { title: "Mozhi Mirai Lingua Institute of Languages — The Future of Languages" },
+      { name: "description", content: "Master English, Hindi, Japanese, German, and Tamil with expert online trainers at Mozhi Mirai Lingua Institute of Languages — the premier online language institute." },
+      { property: "og:title", content: "Mozhi Mirai Lingua Institute of Languages — The Future of Languages" },
       { property: "og:description", content: "A premier online language institute dedicated to transforming the way people learn languages." },
       { property: "og:url", content: "/" },
     ],
@@ -31,7 +31,7 @@ export const Route = createFileRoute("/")({
         children: JSON.stringify({
           "@context": "https://schema.org",
           "@type": "EducationalOrganization",
-          name: "Mozhi Mirai",
+          name: "Mozhi Mirai Lingua Institute of Languages",
           description: "A premier online language institute dedicated to transforming the way people learn languages. Specializing in English, Hindi, Japanese, German, and Tamil.",
           url: "/",
           telephone: "+91 87545 58374",

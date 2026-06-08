@@ -10,8 +10,9 @@ export function Footer() {
       <div className="mx-auto max-w-7xl px-5 md:px-8">
         <div className="grid md:grid-cols-12 gap-10 pb-16 border-b border-white/10">
           <div className="md:col-span-5">
-            <div className="font-display text-5xl md:text-6xl leading-none">
-              Mozhi<br/><span className="italic text-yellow">Mirai.</span>
+            <div className="font-display text-4xl md:text-5xl leading-[1.1]">
+              Mozhi Mirai<br/>
+              Lingua <span className="italic text-yellow">Institute.</span>
             </div>
             <p className="mt-6 max-w-sm text-background/70">The Future of Languages. A premier online language institute dedicated to transforming the way people learn languages.</p>
 
@@ -38,7 +39,7 @@ export function Footer() {
         </div>
 
         <div className="mt-10 flex flex-col md:flex-row justify-between gap-4 text-xs text-background/60">
-          <p>© {new Date().getFullYear()} Mozhi Mirai. The Future of Languages.</p>
+          <p>© {new Date().getFullYear()} Mozhi Mirai Lingua Institute of Languages. The Future of Languages.</p>
           <div className="flex gap-6"><a href="#">Privacy</a><a href="#">Terms</a><a href="#">Cookies</a></div>
         </div>
       </div>

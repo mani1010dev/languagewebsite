@@ -46,7 +46,7 @@ export function Hero() {
             className="mt-8 max-w-xl text-lg md:text-xl text-foreground/70 leading-relaxed"
           >
             An immersive online education in <em className="text-foreground">English, Hindi, Japanese, German</em> and <em className="text-foreground">Tamil</em> — designed for students, professionals, and global citizens at
-            <span className="font-medium text-royal"> Mozhi Mirai</span>.
+            <span className="font-medium text-royal"> Mozhi Mirai Lingua Institute of Languages</span>.
           </motion.p>
 
           <motion.div

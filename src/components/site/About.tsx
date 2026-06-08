@@ -13,7 +13,7 @@ export function About() {
           className="md:col-span-5 relative"
         >
           <div className="aspect-[3/4] rounded-2xl overflow-hidden shadow-2xl shadow-royal/10">
-            <img src={portrait} alt="Inside Mozhi Mirai" width={960} height={1280} loading="lazy" className="w-full h-full object-cover" />
+            <img src={portrait} alt="Inside Mozhi Mirai Lingua Institute of Languages" width={960} height={1280} loading="lazy" className="w-full h-full object-cover" />
           </div>
           <div className="absolute -bottom-6 -right-6 size-32 rounded-full bg-yellow grid place-items-center font-display italic text-foreground rotate-[-8deg] shadow-xl">
             <div className="text-center text-sm leading-tight">Since<br/><span className="text-2xl">2026</span></div>
@@ -27,10 +27,10 @@ export function About() {
           </h2>
           <div className="mt-8 space-y-4 text-foreground/75 max-w-2xl leading-relaxed text-lg">
             <p>
-              <strong>Mozhi Mirai – The Future of Languages</strong> is a premier online language institute dedicated to transforming the way people learn languages. Founded in 2026, we are committed to empowering students, professionals, and lifelong learners with the linguistic skills and cultural understanding needed to thrive in an increasingly interconnected world.
+              <strong>Mozhi Mirai Lingua Institute of Languages – The Future of Languages</strong> is a premier online language institute dedicated to transforming the way people learn languages. Founded in 2026, we are committed to empowering students, professionals, and lifelong learners with the linguistic skills and cultural understanding needed to thrive in an increasingly interconnected world.
             </p>
             <p className="text-base text-foreground/70">
-              At Mozhi Mirai, we believe that language is not merely a subject to be studied—it is a powerful tool that unlocks opportunities, broadens perspectives, and builds meaningful connections across cultures and communities. Our mission is to make high-quality language education accessible, engaging, and results-driven for learners everywhere.
+              At Mozhi Mirai Lingua Institute of Languages, we believe that language is not merely a subject to be studied—it is a powerful tool that unlocks opportunities, broadens perspectives, and builds meaningful connections across cultures and communities. Our mission is to make high-quality language education accessible, engaging, and results-driven for learners everywhere.
             </p>
           </div>
 
