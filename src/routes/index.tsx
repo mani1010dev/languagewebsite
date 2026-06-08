@@ -9,6 +9,7 @@ import { Stats } from "@/components/site/Stats";
 import { Trainers } from "@/components/site/Trainers";
 import { Testimonials } from "@/components/site/Testimonials";
 import { Gallery } from "@/components/site/Gallery";
+import { InstagramFeed } from "@/components/site/InstagramFeed";
 import { Blog } from "@/components/site/Blog";
 import { Faq } from "@/components/site/Faq";
 import { Contact } from "@/components/site/Contact";
@@ -56,6 +57,7 @@ function Index() {
         <Trainers />
         <Testimonials />
         <Gallery />
+        <InstagramFeed />
         <Blog />
         <Faq />
         <Contact />
