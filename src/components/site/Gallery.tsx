@@ -44,6 +44,7 @@ export function Gallery() {
                 {it.label}
               </figcaption>
             </motion.figure>
+          ))}
         </div>
 
         <motion.div
