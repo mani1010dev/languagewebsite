@@ -108,13 +108,20 @@ export function LanguageStories() {
                     </li>
                   ))}
                 </ul>
-                <div className="mt-6 flex items-center gap-3 bg-foreground/5 rounded-2xl p-4 border border-foreground/5 max-w-sm">
-                  <div className={`size-2.5 rounded-full animate-pulse ${s.accent.replace("text-", "bg-")}`} />
-                  <div className="text-sm">
-                    <span className="font-semibold text-foreground">Duration: </span>
-                    <span className="text-muted-foreground">{s.duration}</span>
-                  </div>
-                </div>
+                 <div className="mt-6 flex flex-col sm:flex-row sm:items-center gap-3 bg-foreground/5 rounded-2xl p-4 border border-foreground/5 max-w-md">
+                   <div className="flex items-center gap-3">
+                     <div className={`size-2.5 rounded-full animate-pulse ${s.accent.replace("text-", "bg-")}`} />
+                     <div className="text-sm">
+                       <span className="font-semibold text-foreground">Duration: </span>
+                       <span className="text-muted-foreground">{s.duration}</span>
+                     </div>
+                   </div>
+                   <div className="hidden sm:block h-4 w-px bg-foreground/15" />
+                   <div className="flex items-center gap-2">
+                     <span className="size-1.5 rounded-full bg-lime animate-pulse" />
+                     <span className="text-xs font-semibold tracking-wider uppercase text-lime">Online Only</span>
+                   </div>
+                 </div>
                 <div className="mt-8">
                   <a href="#contact" className="inline-flex items-center gap-2 text-base font-medium border-b border-foreground/40 hover:border-royal hover:text-royal transition pb-1">
                     Begin {s.name} →

@@ -151,6 +151,19 @@ function Hero() {
             initial: { opacity: 0, y: 20 },
             animate: { opacity: 1, y: 0 },
             transition: { duration: 0.8 },
+            className: "inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-lime/10 border border-lime/30 text-lime text-xs font-semibold tracking-wider uppercase mb-5",
+            children: [
+              /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "size-1.5 rounded-full bg-lime animate-pulse" }),
+              "100% Live Online Classes Only"
+            ]
+          }
+        ),
+        /* @__PURE__ */ jsxRuntimeExports.jsxs(
+          motion.div,
+          {
+            initial: { opacity: 0, y: 20 },
+            animate: { opacity: 1, y: 0 },
+            transition: { duration: 0.8, delay: 0.1 },
             className: "flex items-center gap-3 text-xs uppercase tracking-[0.3em] text-muted-foreground",
             children: [
               /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "h-px w-10 bg-foreground/40" }),
@@ -284,7 +297,8 @@ function About() {
           /* @__PURE__ */ jsxRuntimeExports.jsx("strong", { children: "Mozhi Mirai Lingua Institute of Languages – The Future of Languages" }),
           " is a premier online language institute dedicated to transforming the way people learn languages. Founded in 2026, we are committed to empowering students, professionals, and lifelong learners with the linguistic skills and cultural understanding needed to thrive in an increasingly interconnected world."
         ] }),
-        /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-base text-foreground/70", children: "At Mozhi Mirai Lingua Institute of Languages, we believe that language is not merely a subject to be studied—it is a powerful tool that unlocks opportunities, broadens perspectives, and builds meaningful connections across cultures and communities. Our mission is to make high-quality language education accessible, engaging, and results-driven for learners everywhere." })
+        /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-base text-foreground/70", children: "At Mozhi Mirai Lingua Institute of Languages, we believe that language is not merely a subject to be studied—it is a powerful tool that unlocks opportunities, broadens perspectives, and builds meaningful connections across cultures and communities. Our mission is to make high-quality language education accessible, engaging, and results-driven for learners everywhere." }),
+        /* @__PURE__ */ jsxRuntimeExports.jsx("p", { className: "text-base text-foreground/70", children: "As a fully online institute, Mozhi Mirai removes geographical barriers to quality education, bringing expert instruction directly to learners wherever they are. Through innovative teaching methods, interactive sessions, and a student-centred approach, we create an environment where learning is effective, enjoyable, and impactful." })
       ] }),
       /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "mt-12 grid sm:grid-cols-2 gap-8", children: [
         /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "border-l-2 border-royal pl-5", children: [
@@ -397,11 +411,18 @@ function LanguageStories() {
               /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: `mt-2 size-1.5 rounded-full ${s.accent.replace("text-", "bg-")}` }),
               b
             ] }, b)) }),
-            /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "mt-6 flex items-center gap-3 bg-foreground/5 rounded-2xl p-4 border border-foreground/5 max-w-sm", children: [
-              /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: `size-2.5 rounded-full animate-pulse ${s.accent.replace("text-", "bg-")}` }),
-              /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "text-sm", children: [
-                /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "font-semibold text-foreground", children: "Duration: " }),
-                /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "text-muted-foreground", children: s.duration })
+            /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "mt-6 flex flex-col sm:flex-row sm:items-center gap-3 bg-foreground/5 rounded-2xl p-4 border border-foreground/5 max-w-md", children: [
+              /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center gap-3", children: [
+                /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: `size-2.5 rounded-full animate-pulse ${s.accent.replace("text-", "bg-")}` }),
+                /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "text-sm", children: [
+                  /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "font-semibold text-foreground", children: "Duration: " }),
+                  /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "text-muted-foreground", children: s.duration })
+                ] })
+              ] }),
+              /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "hidden sm:block h-4 w-px bg-foreground/15" }),
+              /* @__PURE__ */ jsxRuntimeExports.jsxs("div", { className: "flex items-center gap-2", children: [
+                /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "size-1.5 rounded-full bg-lime animate-pulse" }),
+                /* @__PURE__ */ jsxRuntimeExports.jsx("span", { className: "text-xs font-semibold tracking-wider uppercase text-lime", children: "Online Only" })
               ] })
             ] }),
             /* @__PURE__ */ jsxRuntimeExports.jsx("div", { className: "mt-8", children: /* @__PURE__ */ jsxRuntimeExports.jsxs("a", { href: "#contact", className: "inline-flex items-center gap-2 text-base font-medium border-b border-foreground/40 hover:border-royal hover:text-royal transition pb-1", children: [
@@ -744,7 +765,7 @@ const AccordionContent = reactExports.forwardRef(({ className, children, ...prop
 AccordionContent.displayName = Content2.displayName;
 const FAQS = [
   { q: "How do I enrol?", a: "Pick a language above and use the contact form, or call us directly — we'll guide you to the right batch." },
-  { q: "Are online classes available?", a: "Yes. Every course runs both in-person at our atelier and live online, with recorded sessions available." },
+  { q: "Are these classes fully online?", a: "Yes. Mozhi Mirai is a fully online language institute. Every course is conducted 100% live online with interactive sessions, expert guidance, and recorded backups for your convenience." },
   { q: "Do you provide certificates?", a: "Yes — institute certifications plus preparation for international exams like IELTS, JLPT, and Goethe." },
   { q: "What are the batch timings?", a: "Morning, evening, and weekend batches. We accommodate students, professionals, and travellers." },
   { q: "Which language should I choose?", a: "If you're unsure, book a free consultation — we'll help you match a language to your goals." }

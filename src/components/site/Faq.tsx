@@ -2,7 +2,7 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/
 
 const FAQS = [
   { q: "How do I enrol?", a: "Pick a language above and use the contact form, or call us directly — we'll guide you to the right batch." },
-  { q: "Are online classes available?", a: "Yes. Every course runs both in-person at our atelier and live online, with recorded sessions available." },
+  { q: "Are these classes fully online?", a: "Yes. Mozhi Mirai is a fully online language institute. Every course is conducted 100% live online with interactive sessions, expert guidance, and recorded backups for your convenience." },
   { q: "Do you provide certificates?", a: "Yes — institute certifications plus preparation for international exams like IELTS, JLPT, and Goethe." },
   { q: "What are the batch timings?", a: "Morning, evening, and weekend batches. We accommodate students, professionals, and travellers." },
   { q: "Which language should I choose?", a: "If you're unsure, book a free consultation — we'll help you match a language to your goals." },

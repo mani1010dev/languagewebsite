@@ -32,6 +32,9 @@ export function About() {
             <p className="text-base text-foreground/70">
               At Mozhi Mirai Lingua Institute of Languages, we believe that language is not merely a subject to be studied—it is a powerful tool that unlocks opportunities, broadens perspectives, and builds meaningful connections across cultures and communities. Our mission is to make high-quality language education accessible, engaging, and results-driven for learners everywhere.
             </p>
+            <p className="text-base text-foreground/70">
+              As a fully online institute, Mozhi Mirai removes geographical barriers to quality education, bringing expert instruction directly to learners wherever they are. Through innovative teaching methods, interactive sessions, and a student-centred approach, we create an environment where learning is effective, enjoyable, and impactful.
+            </p>
           </div>
 
           <div className="mt-12 grid sm:grid-cols-2 gap-8">

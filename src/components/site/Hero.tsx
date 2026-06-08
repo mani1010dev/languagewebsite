@@ -24,6 +24,16 @@ export function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
+            className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-lime/10 border border-lime/30 text-lime text-xs font-semibold tracking-wider uppercase mb-5"
+          >
+            <span className="size-1.5 rounded-full bg-lime animate-pulse" />
+            100% Live Online Classes Only
+          </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.1 }}
             className="flex items-center gap-3 text-xs uppercase tracking-[0.3em] text-muted-foreground"
           >
             <span className="h-px w-10 bg-foreground/40" />
