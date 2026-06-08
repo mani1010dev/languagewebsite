@@ -3,7 +3,7 @@ import { motion } from "motion/react";
 const ITEMS = [
   {
     src: "/photos/WhatsApp Video 2026-06-08 at 12.22.24 PM.mp4",
-    span: "md:col-span-2 md:row-span-2",
+    span: "col-span-2 md:col-span-2 md:row-span-2",
     label: "Live Virtual Classroom Session",
     isVideo: true,
   },
@@ -19,7 +19,7 @@ const ITEMS = [
   },
   {
     src: "/photos/WhatsApp Image 2026-06-08 at 12.22.25 PM (1).jpeg",
-    span: "md:row-span-2",
+    span: "",
     label: "Engaged Learners & Batches",
   },
   {
@@ -43,7 +43,7 @@ export function Gallery() {
           <p className="max-w-sm text-foreground/70">Virtual sessions, study groups, interactive lessons, and global certifications — a year in pictures.</p>
         </div>
 
-        <div className="grid grid-cols-2 md:grid-cols-4 auto-rows-[200px] md:auto-rows-[240px] gap-4">
+        <div className="grid grid-cols-2 md:grid-cols-3 auto-rows-[200px] md:auto-rows-[240px] gap-4">
           {ITEMS.map((it, i) => (
             <motion.figure
               key={i}
