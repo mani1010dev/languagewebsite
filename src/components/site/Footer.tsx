@@ -1,7 +1,33 @@
 const COLS = [
-  { title: "Languages", links: ["English", "Hindi", "Japanese", "German", "Tamil"] },
-  { title: "Institute", links: ["About", "Trainers", "Gallery", "Blog", "Careers"] },
-  { title: "Connect", links: ["Instagram", "YouTube", "LinkedIn", "WhatsApp"] },
+  {
+    title: "Languages",
+    links: [
+      { label: "English", href: "#languages" },
+      { label: "Hindi", href: "#languages" },
+      { label: "Japanese", href: "#languages" },
+      { label: "German", href: "#languages" },
+      { label: "Tamil", href: "#languages" },
+    ],
+  },
+  {
+    title: "Institute",
+    links: [
+      { label: "About", href: "#about" },
+      { label: "Trainers", href: "#trainers" },
+      { label: "Gallery", href: "#gallery" },
+      { label: "Blog", href: "#blog" },
+      { label: "Careers", href: "#contact" },
+    ],
+  },
+  {
+    title: "Connect",
+    links: [
+      { label: "Instagram", href: "https://www.instagram.com/mozhimirai?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==", target: "_blank" },
+      { label: "YouTube", href: "#" },
+      { label: "LinkedIn", href: "#" },
+      { label: "WhatsApp", href: "https://wa.me/918754558374", target: "_blank" },
+    ],
+  },
 ];
 
 export function Footer() {
@@ -29,8 +55,17 @@ export function Footer() {
             <div key={c.title} className="md:col-span-2">
               <div className="text-xs uppercase tracking-[0.3em] text-background/60">{c.title}</div>
               <ul className="mt-5 space-y-3">
-                {c.links.map((l) => (
-                  <li key={l}><a href="#" className="text-background/85 hover:text-yellow transition">{l}</a></li>
+                {c.links.map((link) => (
+                  <li key={link.label}>
+                    <a
+                      href={link.href}
+                      target={link.target}
+                      rel={link.target === "_blank" ? "noopener noreferrer" : undefined}
+                      className="text-background/85 hover:text-yellow transition"
+                    >
+                      {link.label}
+                    </a>
+                  </li>
                 ))}
               </ul>
             </div>
