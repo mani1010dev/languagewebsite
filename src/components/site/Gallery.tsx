@@ -5,14 +5,22 @@ import c from "@/assets/lang-japanese.jpg";
 import d from "@/assets/lang-german.jpg";
 import e from "@/assets/lang-hindi.jpg";
 import f from "@/assets/lang-tamil.jpg";
+import englishReel from "@/assets/instagram-reel-english.png";
+import japaneseReel from "@/assets/instagram-reel-japanese.png";
+import germanReel from "@/assets/instagram-reel-german.png";
+import successPost from "@/assets/instagram-post-success.png";
 
 const ITEMS = [
-  { src: a, span: "row-span-2", label: "The Atelier" },
-  { src: b, span: "", label: "London Week" },
-  { src: c, span: "", label: "Sakura Workshop" },
-  { src: d, span: "row-span-2", label: "Berlin Exchange" },
-  { src: e, span: "", label: "Hindi Diwas" },
-  { src: f, span: "", label: "Tamil Literature Day" },
+  { src: a, span: "row-span-2", label: "Interactive Classes", type: "photo" },
+  { src: b, span: "", label: "English Corner", type: "photo" },
+  { src: englishReel, span: "", label: "Spoken English Tips (Reel)", type: "reel", href: "https://www.instagram.com/reel/DXdX6G2E9Dx/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" },
+  { src: japaneseReel, span: "", label: "JLPT Kanji Tips (Reel)", type: "reel", href: "https://www.instagram.com/reel/DYRkjXivYFL/?utm_source=ig_web_button_share_sheet&igsh=MzRlODBiNWFlZA==" },
+  { src: d, span: "row-span-2", label: "Language Exchange", type: "photo" },
+  { src: c, span: "", label: "Japanese Kaiwa Sessions", type: "photo" },
+  { src: germanReel, span: "", label: "German Grammar Secrets (Reel)", type: "reel", href: "https://www.instagram.com/reel/DX_k3XuP3x1/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" },
+  { src: successPost, span: "", label: "Student Success Story (Post)", type: "post", href: "https://www.instagram.com/p/DXM8hUfklqQ/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" },
+  { src: e, span: "", label: "Hindi Spoken Class", type: "photo" },
+  { src: f, span: "", label: "Tamil Heritage Day", type: "photo" },
 ];
 
 export function Gallery() {
@@ -26,25 +34,84 @@ export function Gallery() {
               Life inside <span className="italic text-gradient-brand">the institute.</span>
             </h2>
           </div>
-          <p className="max-w-sm text-foreground/70">Workshops, festivals, guest sessions and quiet study afternoons — a year in pictures.</p>
+          <p className="max-w-sm text-foreground/70">Interactive online workshops, speech sessions, exam prep courses, and student success highlights.</p>
         </div>
 
-        <div className="grid grid-cols-2 md:grid-cols-4 auto-rows-[200px] md:auto-rows-[240px] gap-4">
-          {ITEMS.map((it, i) => (
-            <motion.figure
-              key={i}
-              initial={{ opacity: 0, scale: 0.96 }}
-              whileInView={{ opacity: 1, scale: 1 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6, delay: i * 0.05 }}
-              className={`group relative overflow-hidden rounded-2xl ${it.span}`}
-            >
-              <img src={it.src} alt={it.label} loading="lazy" width={1280} height={880} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
-              <figcaption className="absolute inset-x-0 bottom-0 p-4 text-white text-sm font-medium bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity">
-                {it.label}
-              </figcaption>
-            </motion.figure>
-          ))}
+        <div className="grid grid-cols-2 md:grid-cols-4 auto-rows-[200px] md:auto-rows-[240px] gap-4 grid-flow-row-dense">
+          {ITEMS.map((it, i) => {
+            const Content = (
+              <>
+                <img
+                  src={it.src}
+                  alt={it.label}
+                  loading="lazy"
+                  width={1280}
+                  height={880}
+                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                />
+                
+                {/* Play icon overlay for Reels */}
+                {it.type === "reel" && (
+                  <div className="absolute inset-0 flex items-center justify-center bg-black/25 group-hover:bg-black/45 transition-colors">
+                    <div className="size-14 rounded-full bg-white/90 backdrop-blur text-[#e95950] flex items-center justify-center shadow-lg shadow-black/10 scale-90 group-hover:scale-100 transition-transform duration-300">
+                      <svg className="size-6 fill-current translate-x-0.5" viewBox="0 0 24 24">
+                        <path d="M8 5v14l11-7z" />
+                      </svg>
+                    </div>
+                  </div>
+                )}
+
+                {/* Instagram Icon overlay for Posts */}
+                {it.type === "post" && (
+                  <div className="absolute top-4 right-4 bg-white/95 backdrop-blur text-[#e95950] p-2 rounded-full shadow-md opacity-0 group-hover:opacity-100 transition-opacity">
+                    <svg className="size-4 fill-current" viewBox="0 0 24 24">
+                      <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.051.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z" />
+                    </svg>
+                  </div>
+                )}
+
+                <figcaption className="absolute inset-x-0 bottom-0 p-4 text-white text-sm font-medium bg-gradient-to-t from-black/80 via-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex justify-between items-center">
+                  <span>{it.label}</span>
+                  {it.href && (
+                    <span className="text-[10px] uppercase tracking-widest bg-white/20 px-2 py-0.5 rounded backdrop-blur">
+                      View Reel
+                    </span>
+                  )}
+                </figcaption>
+              </>
+            );
+
+            if (it.href) {
+              return (
+                <motion.a
+                  key={i}
+                  href={it.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  initial={{ opacity: 0, scale: 0.96 }}
+                  whileInView={{ opacity: 1, scale: 1 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.6, delay: i * 0.05 }}
+                  className={`group relative overflow-hidden rounded-2xl cursor-pointer ${it.span}`}
+                >
+                  {Content}
+                </motion.a>
+              );
+            }
+
+            return (
+              <motion.figure
+                key={i}
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6, delay: i * 0.05 }}
+                className={`group relative overflow-hidden rounded-2xl ${it.span}`}
+              >
+                {Content}
+              </motion.figure>
+            );
+          })}
         </div>
 
         <motion.div
