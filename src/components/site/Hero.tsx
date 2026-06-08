@@ -27,7 +27,7 @@ export function Hero() {
             className="flex items-center gap-3 text-xs uppercase tracking-[0.3em] text-muted-foreground"
           >
             <span className="h-px w-10 bg-foreground/40" />
-            Issue No. 05 · The Language Edition
+            Est. 2026 · The Future of Languages
           </motion.div>
 
           <h1 className="mt-6 font-display font-light leading-[0.92] text-[clamp(3.2rem,9vw,8.5rem)]">
@@ -45,8 +45,8 @@ export function Hero() {
             transition={{ delay: 0.5, duration: 0.8 }}
             className="mt-8 max-w-xl text-lg md:text-xl text-foreground/70 leading-relaxed"
           >
-            An immersive education in <em className="text-foreground">English, Hindi, Japanese, German</em> and <em className="text-foreground">Tamil</em> — designed for students, professionals, and global citizens at the
-            <span className="font-medium text-royal"> Institute of Languages</span>.
+            An immersive online education in <em className="text-foreground">English, Hindi, Japanese, German</em> and <em className="text-foreground">Tamil</em> — designed for students, professionals, and global citizens at
+            <span className="font-medium text-royal"> Mozhi Mirai</span>.
           </motion.p>
 
           <motion.div

@@ -20,13 +20,13 @@ export function Contact() {
           </p>
 
           <div className="mt-12 space-y-5 text-foreground/80">
-            <a className="flex items-center gap-4 hover:text-royal" href="tel:+919876543210"><Phone className="size-5 text-royal" /> +91 98765 43210</a>
-            <a className="flex items-center gap-4 hover:text-royal" href="mailto:hello@instituteoflanguages.com"><Mail className="size-5 text-pink" /> hello@instituteoflanguages.com</a>
-            <div className="flex items-start gap-4"><MapPin className="size-5 text-orange mt-1" /> 24 Linguist Lane, Chennai 600001</div>
-            <a className="flex items-center gap-4 hover:text-lime" href="#" ><MessageCircle className="size-5 text-lime" /> WhatsApp us</a>
+            <a className="flex items-center gap-4 hover:text-royal" href="tel:+918754558374"><Phone className="size-5 text-royal" /> +91 87545 58374</a>
+            <a className="flex items-center gap-4 hover:text-royal" href="mailto:mozhimirai@gmail.com"><Mail className="size-5 text-pink" /> mozhimirai@gmail.com</a>
+            <div className="flex items-start gap-4"><MapPin className="size-5 text-orange mt-1" /> Online Only</div>
+            <a className="flex items-center gap-4 hover:text-lime" target="_blank" rel="noopener noreferrer" href="https://wa.me/918754558374"><MessageCircle className="size-5 text-lime" /> WhatsApp us (+91 87545 58374)</a>
           </div>
 
-          <p className="mt-10 text-xs uppercase tracking-widest text-muted-foreground">Mon — Sat · 8am to 8pm</p>
+          <p className="mt-10 text-xs uppercase tracking-widest text-muted-foreground">Daily · 11 am to 9 pm</p>
         </div>
 
         <form

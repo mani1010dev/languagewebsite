@@ -12,7 +12,8 @@ const STORIES = [
     native: "The Global Tongue",
     image: english,
     accent: "text-orange",
-    bullets: ["Business communication", "Public speaking", "IELTS & TOEFL prep", "Career growth"],
+    bullets: ["Levels A1–C2 Programs", "IELTS & TOEFL Preparation", "Spoken English Classes", "Interactive Grammar & Vocabulary"],
+    duration: "4 Months + 2 Months Exam Prep",
   },
   {
     no: "02",
@@ -20,7 +21,8 @@ const STORIES = [
     native: "हिन्दी",
     image: hindi,
     accent: "text-pink",
-    bullets: ["National communication", "Cultural literacy", "Bollywood & media", "Conversational fluency"],
+    bullets: ["All Proficiency Levels", "Spoken Hindi Focus", "Conversational Fluency", "Cultural & Media Literacy"],
+    duration: "4 Months + 2 Months Exam Prep",
   },
   {
     no: "03",
@@ -28,7 +30,8 @@ const STORIES = [
     native: "日本語",
     image: japanese,
     accent: "text-purple",
-    bullets: ["JLPT N5 to N1", "Japan job opportunities", "Anime & culture", "Business Japanese"],
+    bullets: ["JLPT N5–N1 Preparation", "NAT Q5–Q1 Examination", "Kaiwa (Spoken Japanese)", "Career & Study guidance in Japan"],
+    duration: "4 Months + 2 Months Exam Prep",
   },
   {
     no: "04",
@@ -36,7 +39,8 @@ const STORIES = [
     native: "Deutsch",
     image: german,
     accent: "text-royal",
-    bullets: ["A1 to C2 (Goethe)", "Study in Germany", "Engineering careers", "Work visa support"],
+    bullets: ["Levels A1–B2 Programs", "Goethe Exam Preparation", "Study in Germany guidance", "Engineering & Work Visa support"],
+    duration: "4 Months + 2 Months Exam Prep",
   },
   {
     no: "05",
@@ -44,7 +48,8 @@ const STORIES = [
     native: "தமிழ்",
     image: tamil,
     accent: "text-lime",
-    bullets: ["Reading & writing", "Classical literature", "Professional speech", "Heritage learning"],
+    bullets: ["All Proficiency Levels", "Reading, Writing & Speaking", "Classical & Modern Tamil", "Heritage Language Learning"],
+    duration: "4 Months + 2 Months Exam Prep",
   },
 ];
 
@@ -103,9 +108,18 @@ export function LanguageStories() {
                     </li>
                   ))}
                 </ul>
-                <a href="#contact" className="mt-8 inline-flex items-center gap-2 text-base font-medium border-b border-foreground/40 hover:border-royal hover:text-royal transition pb-1">
-                  Begin {s.name} →
-                </a>
+                <div className="mt-6 flex items-center gap-3 bg-foreground/5 rounded-2xl p-4 border border-foreground/5 max-w-sm">
+                  <div className={`size-2.5 rounded-full animate-pulse ${s.accent.replace("text-", "bg-")}`} />
+                  <div className="text-sm">
+                    <span className="font-semibold text-foreground">Duration: </span>
+                    <span className="text-muted-foreground">{s.duration}</span>
+                  </div>
+                </div>
+                <div className="mt-8">
+                  <a href="#contact" className="inline-flex items-center gap-2 text-base font-medium border-b border-foreground/40 hover:border-royal hover:text-royal transition pb-1">
+                    Begin {s.name} →
+                  </a>
+                </div>
               </div>
             </motion.article>
           ))}

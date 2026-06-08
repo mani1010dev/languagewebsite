@@ -18,10 +18,10 @@ import { BackToTop } from "@/components/site/BackToTop";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Institute of Languages — Speak to the World" },
-      { name: "description", content: "Master English, Hindi, Japanese, German, and Tamil with expert trainers at the Institute of Languages — a premium global language experience." },
-      { property: "og:title", content: "Institute of Languages — Speak to the World" },
-      { property: "og:description", content: "A premium language atelier teaching five world languages." },
+      { title: "Mozhi Mirai — The Future of Languages" },
+      { name: "description", content: "Master English, Hindi, Japanese, German, and Tamil with expert online trainers at Mozhi Mirai — the premier online language institute." },
+      { property: "og:title", content: "Mozhi Mirai — The Future of Languages" },
+      { property: "og:description", content: "A premier online language institute dedicated to transforming the way people learn languages." },
       { property: "og:url", content: "/" },
     ],
     links: [{ rel: "canonical", href: "/" }],
@@ -31,11 +31,11 @@ export const Route = createFileRoute("/")({
         children: JSON.stringify({
           "@context": "https://schema.org",
           "@type": "EducationalOrganization",
-          name: "Institute of Languages",
-          description: "Premium language institute teaching English, Hindi, Japanese, German and Tamil.",
+          name: "Mozhi Mirai",
+          description: "A premier online language institute dedicated to transforming the way people learn languages. Specializing in English, Hindi, Japanese, German, and Tamil.",
           url: "/",
-          telephone: "+91-98765-43210",
-          address: { "@type": "PostalAddress", streetAddress: "24 Linguist Lane", addressLocality: "Chennai", postalCode: "600001", addressCountry: "IN" },
+          telephone: "+91 87545 58374",
+          address: { "@type": "PostalAddress", streetAddress: "Online Only", addressLocality: "Chennai", postalCode: "600001", addressCountry: "IN" },
         }),
       },
     ],

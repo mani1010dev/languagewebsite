@@ -11,12 +11,12 @@ export function Footer() {
         <div className="grid md:grid-cols-12 gap-10 pb-16 border-b border-white/10">
           <div className="md:col-span-5">
             <div className="font-display text-5xl md:text-6xl leading-none">
-              Institute<br/>of <span className="italic text-yellow">Languages.</span>
+              Mozhi<br/><span className="italic text-yellow">Mirai.</span>
             </div>
-            <p className="mt-6 max-w-sm text-background/70">A premium language atelier teaching the five tongues that open the modern world.</p>
+            <p className="mt-6 max-w-sm text-background/70">The Future of Languages. A premier online language institute dedicated to transforming the way people learn languages.</p>
 
             <form className="mt-8 flex gap-2 max-w-md">
-              <input type="email" placeholder="Your email for the journal" className="flex-1 bg-white/5 border border-white/15 rounded-full px-5 py-3 text-sm focus:outline-none focus:border-yellow" />
+              <input type="email" placeholder="Your email for updates" className="flex-1 bg-white/5 border border-white/15 rounded-full px-5 py-3 text-sm focus:outline-none focus:border-yellow" />
               <button className="rounded-full bg-yellow text-foreground px-5 py-3 text-sm font-medium hover:bg-orange transition">Subscribe</button>
             </form>
           </div>
@@ -33,12 +33,12 @@ export function Footer() {
           ))}
 
           <div className="md:col-span-1 text-xs text-background/60 leading-relaxed">
-            24 Linguist Lane, Chennai 600001<br/>+91 98765 43210
+            Online Only<br/>+91 87545 58374
           </div>
         </div>
 
         <div className="mt-10 flex flex-col md:flex-row justify-between gap-4 text-xs text-background/60">
-          <p>© {new Date().getFullYear()} Institute of Languages. Speak beyond borders.</p>
+          <p>© {new Date().getFullYear()} Mozhi Mirai. The Future of Languages.</p>
           <div className="flex gap-6"><a href="#">Privacy</a><a href="#">Terms</a><a href="#">Cookies</a></div>
         </div>
       </div>

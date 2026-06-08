@@ -37,12 +37,12 @@ export function Nav() {
       >
         <a href="#home" className="flex items-center gap-2.5 group">
           <span className="relative size-9 rounded-full bg-gradient-to-tr from-royal via-purple to-pink grid place-items-center text-white font-bold text-sm shadow-lg shadow-royal/30">
-            IL
+            MM
             <span className="absolute inset-0 rounded-full ring-1 ring-white/40" />
           </span>
           <span className="font-display text-[15px] font-semibold tracking-tight leading-none">
-            Institute<br/>
-            <span className="text-muted-foreground text-[11px] uppercase tracking-[0.18em]">of Languages</span>
+            Mozhi<br/>
+            <span className="text-muted-foreground text-[11px] uppercase tracking-[0.18em]">Mirai</span>
           </span>
         </a>
 

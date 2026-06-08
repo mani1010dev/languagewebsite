@@ -73,14 +73,14 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Institute of Languages — Speak to the World" },
-      { name: "description", content: "Learn English, Hindi, Japanese, German and Tamil with expert trainers at the Institute of Languages — a premium global language experience." },
-      { name: "author", content: "Institute of Languages" },
-      { property: "og:title", content: "Institute of Languages — Speak to the World" },
-      { property: "og:description", content: "A premium language-learning experience across five world languages." },
+      { title: "Mozhi Mirai — The Future of Languages" },
+      { name: "description", content: "Learn English, Hindi, Japanese, German and Tamil with expert online trainers at Mozhi Mirai — the premier online language institute." },
+      { name: "author", content: "Mozhi Mirai" },
+      { property: "og:title", content: "Mozhi Mirai — The Future of Languages" },
+      { property: "og:description", content: "A premier online language institute dedicated to transforming the way people learn languages." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
-      { name: "twitter:site", content: "@instofLanguages" },
+      { name: "twitter:site", content: "@mozhimirai" },
     ],
     links: [
       {
